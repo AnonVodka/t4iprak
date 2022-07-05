@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>New calculator</title>
+        <link rel="stylesheet" href="../static/main.css">
+        <link rel="stylesheet" href="../static/calc.css">
+        <script type="text/javascript" src="../static/calc.js"></script>
+    </head>
+    <body>
+        <div class="flex">
+            <div class="calc" id="calculator">
+
+                <h2>Calculator</h2>
+                <div class="vsep"></div>
+
+                <div class="container">
+                    <div class="row" style="justify-content: center">
+                        <input type="text" id="display" value="0" readonly>
+                        <input type="text" id="result" value="" readonly>
+                    </div>
+                </div>
+
+                <div class="vsep"></div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-empty"></div>
+                        <div class="col">CE </div>
+                        <div class="col">C</div>
+                        <div class="col">+</div>
+                    </div>
+                    <div class="row">
+                        <div class="col">7</div>
+                        <div class="col">8</div>
+                        <div class="col">9</div>  
+                        <div class="col">-</div>  
+                    </div>
+                    <div class="row">
+                        <div class="col">4</div>
+                        <div class="col">5</div>
+                        <div class="col">6</div>  
+                        <div class="col">*</div>  
+                    </div>
+                    <div class="row">
+                        <div class="col">1</div>
+                        <div class="col">2</div>
+                        <div class="col">3</div>  
+                        <div class="col">/</div>  
+                    </div>
+                    <div class="row">
+                        <div class="col">.</div>
+                        <div class="col">0</div>
+                        <div class="col-empty"></div>
+                        <div class="col">=</div>  
+                    </div>
+                </div>
+                <div class="vsep" style="margin-top: 15px;"></div>
+                <h4 style="margin: 5;">Order of execution</h4>
+                <div class="vsep"></div>
+                <div class="flex left-bound" style="height: 35%;">
+                    <ol id="ooe"></ol>
+                </div>
+            </div>
+            <div class="hsep"></div>
+            <div class="history">
+                <h2>History</h2>
+                <div class="vsep"></div>
+                <div id="history"></div>
+                <button type="submit" id="clear-history" name="clear">Clear</button>
+            </div>
+        </div>
+    </body>
+</html>

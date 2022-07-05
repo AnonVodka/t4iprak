@@ -1,0 +1,62 @@
+/* elements */
+input[type="text"] {
+    height: 5%;
+    width: 75%;
+    text-align: right;
+    font-size: 1.3em;
+    overflow-x: scroll;
+}
+
+/* classes */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col, .col-empty {
+    position: relative;
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+    width: 1em;
+    height: 1em;
+    border: 1px solid rgba(0, 0, 0, 200);
+    background-color: rgb(200, 200, 200);
+}
+
+.col {
+    cursor: pointer;
+}
+.col-empty {
+    visibility: hidden;
+    color: transparent;
+}
+
+.col:hover {
+    background-color: rgb(150, 150, 150);
+}
+.col:active {
+    background-color: rgb(125, 125, 125);
+}
+
+.ooe-entry:hover {
+    background-color: rgb(150, 150, 150);
+}
+.ooe-entry:active {
+    background-color: rgb(125, 125, 125);
+}
+
+.history-entry:hover {
+    background-color: rgb(150, 150, 150);
+}
+.history-entry:active {
+    background-color: rgb(125, 125, 125);
+}
+
+/* ids */
